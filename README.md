@@ -21,4 +21,7 @@ https://thebobfather2.github.io/enigmagenerator/
 ### Contact
 For more information, email: [bryanandrewpike@gmail.com](mailto:bryanandrewpike@gmail.com)
 Or visit our GitHub page at: [thebobfather2]
-undefined
+
+### License 
+This software is licensed under MIT License
+  
