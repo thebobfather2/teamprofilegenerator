@@ -1,4 +1,5 @@
 # README Generator
+![MIT](https://img.shields.io/badge/license-mit-blue)
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
@@ -19,5 +20,5 @@ Bryan Pike
 https://thebobfather2.github.io/enigmagenerator/
 ### Contact
 For more information, email: [bryanandrewpike@gmail.com](mailto:bryanandrewpike@gmail.com)
-Or visit our GitHub page at: [Bryan Pike]
+Or visit our GitHub page at: [thebobfather2]
 undefined
