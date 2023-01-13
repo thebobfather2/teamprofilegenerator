@@ -1,5 +1,4 @@
-
-# a
+# README Generator
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
@@ -7,18 +6,18 @@
 - [Contribution](#contribution)
 - [Deployed Link](#deployedlink)
 - [Contact](#contact)
-    
+- [License](#license)
 ### Description
-b
+A command line tool that will generate the perfect README file for your repository!
 ### Installation
-c
+git clone the repository, cd into this folder, then yarn install to install the dependencies
 ### Usage
-d
+Use npm start to initiate the prompts
 ### Contribution
-e
+Bryan Pike
 ### Deployed Link
-f
+https://thebobfather2.github.io/enigmagenerator/
 ### Contact
-For more information, email: [h](mailto:h)
-Or visit our GitHub page at: [g]
+For more information, email: [bryanandrewpike@gmail.com](mailto:bryanandrewpike@gmail.com)
+Or visit our GitHub page at: [Bryan Pike]
 undefined
