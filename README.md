@@ -20,7 +20,7 @@ Bryan Pike
 https://thebobfather2.github.io/enigmagenerator/
 ### Contact
 For more information, email: [bryanandrewpike@gmail.com](mailto:bryanandrewpike@gmail.com)
-Or visit our GitHub page at: [https://github.com/thebobfather2]
+Or visit our GitHub page at: https://github.com/thebobfather2
 
 ### License 
 This software is licensed under MIT License
