@@ -37,6 +37,11 @@ const questions = [
         message: 'Deployed Link',
     },
     {
+        type: 'input',
+        name: 'tests',
+        message: 'Write Tests',
+    },
+    {
         type: 'list',
         name: 'license',
         message: 'Choose license',

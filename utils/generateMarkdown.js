@@ -71,9 +71,11 @@ function generateMarkdown(data) {
     ${data.contribution}
     ### Deployed Link
     ${data.deployedlink}
+    ### Tests
+    ${data.tests}
     ### Contact
     For more information, email: [${data.email}](mailto:${data.email})
-    Or visit our GitHub page at: [${data.username}]
+    Or visit our GitHub page at: ${data.username}
 
     ${renderLicenseSection(data.license)}
   `;
