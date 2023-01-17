@@ -1,6 +1,6 @@
 
-# dfgs
- 
+# README Generator
+![MIT](https://img.shields.io/badge/license-mit-blue)
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
@@ -8,21 +8,22 @@
 - [Contribution](#contribution)
 - [Deployed Link](#deployedlink)
 - [Contact](#contact)
- 
+- [License](#license)
 ### Description
-sdfgsdfg
+generates readme files
 ### Installation
-dfgsgs
+git clone the repo, cd into the folder and yarn install the dependencies
 ### Usage
-dfg
+use the command npm start to launcgh prompts
 ### Contribution
-dsfggsd
+bryan pike
 ### Deployed Link
-gdsgfds
+none
 ### Tests
-sdfg
+none
 ### Contact
-For more information, email: [dsfg](mailto:dsfg)
-Or visit our GitHub page at: dsfg
+For more information, email: [bryananadrewpike@gmail.com](mailto:bryananadrewpike@gmail.com)
+Or visit our GitHub page at: https://github.com/thebobfather2/enigmagenerator
 
- 
+### License 
+    This software is licensed under MIT License
