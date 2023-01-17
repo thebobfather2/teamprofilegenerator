@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// this function returns a license badge based on which license is passed in
 function renderLicenseBadge(license) {
   if (license === 'Apache License 2.0') {
     return "[![Apache](https://img.shields.io/badge/license-apache-yellow)](https://opensource.org/licenses/Apache-2.0)"
@@ -27,8 +26,7 @@ function renderLicenseBadge(license) {
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// function that returns the license link
 function renderLicenseLink(license) {
   if (license === "None") {
     return " "
@@ -37,8 +35,7 @@ function renderLicenseLink(license) {
   }
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// function that returns the license section of README
 function renderLicenseSection(license) {
   if (license === "None") {
     return " "
@@ -48,37 +45,37 @@ function renderLicenseSection(license) {
   }
  }
 
-// TODO: Create a function to generate markdown for README
+// function to generate markdown for README
 function generateMarkdown(data) {
-  return `
-    # ${data.title}
-    ${renderLicenseBadge(data.license)}
-    ## Table of Contents
-    - [Description](#description)
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Contribution](#contribution)
-    - [Deployed Link](#deployedlink)
-    - [Contact](#contact)
-    ${renderLicenseLink(data.license)}
-    ### Description
-    ${data.description}
-    ### Installation
-    ${data.installation}
-    ### Usage
-    ${data.usage}
-    ### Contribution
-    ${data.contribution}
-    ### Deployed Link
-    ${data.deployedlink}
-    ### Tests
-    ${data.tests}
-    ### Contact
-    For more information, email: [${data.email}](mailto:${data.email})
-    Or visit our GitHub page at: ${data.username}
+return `
+# ${data.title}
+${renderLicenseBadge(data.license)}
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contribution](#contribution)
+- [Deployed Link](#deployedlink)
+- [Contact](#contact)
+${renderLicenseLink(data.license)}
+### Description
+${data.description}
+### Installation
+${data.installation}
+### Usage
+${data.usage}
+### Contribution
+${data.contribution}
+### Deployed Link
+${data.deployedlink}
+### Tests
+${data.tests}
+### Contact
+For more information, email: [${data.email}](mailto:${data.email})
+Or visit our GitHub page at: ${data.username}
 
-    ${renderLicenseSection(data.license)}
-  `;
+${renderLicenseSection(data.license)}
+`;
 }
 
 module.exports = generateMarkdown;
