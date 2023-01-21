@@ -2,62 +2,34 @@
 const inquirer = require('inquirer')
 const fs = require('fs');
 const path = require('path');
-const generateMarkdown = require('./utils/generateMarkdown')
+const generateHTML = require('./utils/generateHTML')
 
 // array of questions for user input
 const questions = [
     {
         type: 'input',
-        name: 'title',
-        message: 'Title',
+        name: 'memberName',
+        message: 'Employee Name',
     },
     {
         type: 'input',
-        name: 'description',
-        message: 'Description',
+        name: 'teammanagerName',
+        message: 'Team Manager Name',
     },
     {
         type: 'input',
-        name: 'installation',
-        message: 'Installation',
-    },
+        name: 'employeeId',
+        message: 'Employee ID',
+    },   
     {
         type: 'input',
-        name: 'usage',
-        message: 'Usage',
-    },
+        name: 'employeeEmail',
+        message: 'Email Address',
+    },    
     {
         type: 'input',
-        name: 'contribution',
-        message: 'Contribution',
-    },
-    {
-        type: 'input',
-        name: 'deployedlink',
-        message: 'Deployed Link',
-    },
-    {
-        type: 'input',
-        name: 'tests',
-        message: 'Write Tests',
-    },
-    {
-        type: 'list',
-        name: 'license',
-        message: 'Choose license',
-        choices: ["None", "Apache License 2.0", "GNU General Public License v3.0", "MIT License", 'BSD 2-Clause "Simplified" License',
-        'BSD 3-Clause "New" or "Revised" License', "Boost Software License 1.0", "Creative Commons Zero v1.0 Universal", "GNU General Public License v2.0", 
-        "Mozilla Public License 2.0", "The Unlicense"]   
-    },
-    {
-        type: 'input',
-        name: 'username',
-        message: 'GitHub Link',
-    },
-    {
-        type: 'input',
-        name: 'email',
-        message: 'Email address',
+        name: 'officeNumber',
+        message: 'Office Number',
     },
 ];
 
@@ -69,7 +41,7 @@ function writeToFile(fileName, data) {
 // function to initialize app
 function init() {
     inquirer.prompt (questions).then(answers => {
-        writeToFile('README.md', generateMarkdown(answers))
+        writeToFile(answers.memberName + '.html', generateHTML(answers))
         console.log(answers)
     })
 }
