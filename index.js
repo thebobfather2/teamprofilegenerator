@@ -15,11 +15,11 @@ const questions = [
         name: 'memberName',
         message: 'Employee Name',
     },
-    // {
-    //     type: 'input',
-    //     name: 'teammanagerName',
-    //     message: 'Team Manager Name',
-    // },
+    {
+        type: 'input',
+        name: 'teammanagerName',
+        message: 'Team Manager Name',
+    },
     {
         type: 'input',
         name: 'employeeId',
@@ -39,15 +39,23 @@ const questions = [
 
 // loop for user input
 const mainMenu = () => {
+    inquirer.prompt(questions)
+    .then(answer=>{
+        console.log(answer)
+        const newManager = new Manager(answer.memberName, answer.employeeId, answer.employeeEmail, answer.officeNumber)
+        team.push(newManager)
+    ask()
+    })
+}
+const ask =()=>{
+
     inquirer.prompt({
         type: "list", 
         name: "direction",
-        message: "What is the new employee's role?",
-        choices: ["Manager", "Engineer", "Intern", "Done"]
+        message: "Would you like to add an Engineer or an Intern?",
+        choices: ["Engineer", "Intern", "Done"]
     }) .then(answer => {
-        if(answer.direction === "Manager"){
-            addManager()
-        } else if (answer.direction === "Engineer") {
+        if (answer.direction === "Engineer") {
             addEngineer()
         } else if (answer.direction === "Intern") {
             addIntern()
